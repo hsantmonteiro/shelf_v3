@@ -11,13 +11,12 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
         @vite('resources/js/app.js')
     </head>
     <body class="ui-grid">
         <a href="#main-content" class="btn btn--primary skip-to-content">Ir para o conteúdo principal</a>
         <header class="secondary-header">
-            <div class="flex gap-400 ai-center">
+            <div class="flex gap-200 ai-center">
                 <button
                     class="sidebar-toggle"
                     aria-controls="primary-sidebar"
@@ -59,13 +58,13 @@
             </div>
         </header>
         <aside class="primary-sidebar" data-visible="false">
-            <div class="primary-sidebar__header flex gap-400 ai-center">
+            <div class="primary-sidebar__header flex gap-200 ai-center">
                 <button
                     class="close-menu"
                     aria-controls="primary-sidebar"
                     aria-expanded="true"
                 >
-                    <span class="sr-only">Fechar</span>
+                    <span class="sr-only">Fechar menu</span>
                 </button>
                 <a href="/home" class="secondary-header__logo"
                     ><img
@@ -255,7 +254,7 @@
                             <form action="/logout" method="POST">
                                 @csrf
                                 <button
-                                    class="sidebar-item sidebar-item--alert margin-top-auto"
+                                    class="sidebar-item sidebar-item--alert"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
